@@ -1,6 +1,6 @@
 # Hafner.Extensions.Object.CheckNull
 
-This micro repository provides extension method `System.Object.CheckNull()` (with the constraint that the object needs to be a reference type).
+This micro package provides extension method `System.Object.CheckNull()` (restricted to reference types).
 
 ## Description
 

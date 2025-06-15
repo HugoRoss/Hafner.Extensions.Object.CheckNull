@@ -1,0 +1,56 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="NuGet" />
+    <BuildType Name="Release" />
+  </Configurations>
+  <Folder Name="/Implementation/">
+    <Project Path="Hafner.Extensions.Object.CheckNull/Hafner.Extensions.Object.CheckNull.csproj" />
+  </Folder>
+  <Folder Name="/Manual Tests/">
+    <File Path="RunManualTests.bat" />
+    <Project Path="Hafner.Extensions.ManualTests.Net20/Hafner.Extensions.ManualTests.Net20.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Hafner.Extensions.ManualTests.Net30/Hafner.Extensions.ManualTests.Net30.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Hafner.Extensions.ManualTests.Net35/Hafner.Extensions.ManualTests.Net35.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Hafner.Extensions.ManualTests.Net40/Hafner.Extensions.ManualTests.Net40.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Hafner.Extensions.ManualTests.Net403/Hafner.Extensions.ManualTests.Net403.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Hafner.Extensions.ManualTests.Net45/Hafner.Extensions.ManualTests.Net45.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Hafner.Extensions.ManualTests.Net451/Hafner.Extensions.ManualTests.Net451.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Hafner.Extensions.ManualTests.Net452/Hafner.Extensions.ManualTests.Net452.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Hafner.Extensions.ManualTests.Net46/Hafner.Extensions.ManualTests.Net46.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Hafner.Extensions.ManualTests.Net461/Hafner.Extensions.ManualTests.Net461.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="../BuildTools/Resources/PackageReadME.md" />
+    <File Path="../LICENSE" />
+    <File Path="../README.md" />
+    <File Path=".editorconfig" />
+    <File Path="Clean.bat" />
+    <File Path="RunManualTests.bat" />
+  </Folder>
+  <Folder Name="/Unit Tests/">
+    <Project Path="Hafner.Extensions.Object.CheckNull.Tests/Hafner.Extensions.Object.CheckNull.Tests.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+  </Folder>
+</Solution>

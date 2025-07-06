@@ -1,12 +1,23 @@
 # Hafner.Extensions.Object.CheckNull
 
-This micro repository provides extension method `System.Object.CheckNull()` (with the constraint that the object needs to be a reference type).
+This micro repository provides extension method `System.Object.CheckNull()` (restricted to reference types).
 
 ## Description
 
-Package "Hafner.Extensions.Object.CheckNull" contains an extension method for a `System.Object` that checks whether it is null (Nothing in Visual Basic)
+Package `Hafner.Extensions.Object.CheckNull` contains an extension method for a `System.Object` that checks whether it is null (Nothing in Visual Basic)
 and in case it is, throws an `ArgumentNullException` with a speaking message (using the automatically filled in 2nd argument `parameterName`); 
 otherwise, the object is returned.
+
+This method is especially useful in conjunction with C#'s primary constructors where there is no built-in way to check the arguments before they are assigned.
+
+```
+public class Employee(int employeeNo, Person person) {
+
+    public string EmployeeNo { get; } = employeeNo;
+    public string Person { get; } = person.CheckNull();
+
+}
+```
 
 ## Behavior and Edge Cases:
 

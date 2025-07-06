@@ -4,7 +4,10 @@
     <BuildType Name="NuGet" />
     <BuildType Name="Release" />
   </Configurations>
-  <Folder Name="/Testing/">
+  <Folder Name="/1) Implementation/">
+    <Project Path="Implementation/Implementation.csproj" />
+  </Folder>
+  <Folder Name="/2) Testing/">
     <Project Path="Testing/ManualTests.Net20/ManualTests.Net20.csproj">
       <BuildType Project="Debug" />
     </Project>
@@ -49,12 +52,11 @@
       <BuildType Project="Debug" />
     </Project>
   </Folder>
-  <Folder Name="/Solution Items/">
+  <Folder Name="/3) Solution Items/">
     <File Path="../BuildTools/Resources/PackageReadME.md" />
     <File Path="../LICENSE" />
     <File Path="../README.md" />
     <File Path=".editorconfig" />
     <File Path="Clean.bat" />
   </Folder>
-  <Project Path="Implementation/Implementation.csproj" />
 </Solution>

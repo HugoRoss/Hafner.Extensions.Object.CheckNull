@@ -23,7 +23,7 @@ public class Employee(int employeeNo, Person person) {
 
  - If the object is a `System.ValueType` it cannot be called (compile error).
  - If the object is not `null`, the same instance is returned.
- - If the object is `null` and the parameter name is `null`, empty or white-space, an `ArgumentNullException` with a generic message is thrown ("The argument is mandatory and cannot be null!")
+ - If the object is `null` and the parameter name is `null` an `ArgumentNullException` with a generic message is thrown ("The argument is mandatory and cannot be null!")
  - If the object is `null` and the parameter name is recognized as an expression, an `ArgumentNullException` with an according message is thrown ("The result of the expression '\{paramName}' is mandatory and cannot be null!")
  - If the object is `null` and the parameter name is recognized as a parameter name, an `ArgumentNullException` with an according message is thrown ("The argument for parameter '\{paramName}' is mandatory and cannot be null!")
 
